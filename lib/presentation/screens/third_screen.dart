@@ -2,8 +2,8 @@ import 'package:bloc_counter/logic/cubit/counter_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({
+class ThirdScreen extends StatefulWidget {
+  const ThirdScreen({
     super.key,
     required this.title,
     required this.color,
@@ -13,10 +13,10 @@ class HomeScreen extends StatefulWidget {
   final Color color;
 
   @override
-  State<HomeScreen> createState() => _HomeScreenState();
+  State<ThirdScreen> createState() => _ThirdScreenState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _ThirdScreenState extends State<ThirdScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -100,36 +100,6 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ],
             ),
-            const SizedBox(
-              height: 30,
-            ),
-            OutlinedButton(
-              onPressed: () {
-                Navigator.of(context).pushNamed('/second');
-              },
-              style: OutlinedButton.styleFrom(
-                side: BorderSide(color: widget.color),
-              ),
-              child: Text(
-                "Go to Second Screen",
-                style: TextStyle(fontSize: 20, color: widget.color),
-              ),
-            ),
-            const SizedBox(
-              height: 20,
-            ),
-            OutlinedButton(
-              onPressed: () {
-                Navigator.of(context).pushNamed('/third');
-              },
-              style: OutlinedButton.styleFrom(
-                side: BorderSide(color: widget.color),
-              ),
-              child: Text(
-                "Go to Third Screen",
-                style: TextStyle(fontSize: 20, color: widget.color),
-              ),
-            )
           ],
         ),
       ),

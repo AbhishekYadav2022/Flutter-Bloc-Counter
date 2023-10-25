@@ -102,16 +102,6 @@ class _SecondScreenState extends State<SecondScreen> {
             ),
             const SizedBox(
               height: 30,
-            ),
-            OutlinedButton(
-              onPressed: () {},
-              style: OutlinedButton.styleFrom(
-                side: BorderSide(color: widget.color),
-              ),
-              child: Text(
-                "Go to Second Screen",
-                style: TextStyle(fontSize: 20, color: widget.color),
-              ),
             )
           ],
         ),
