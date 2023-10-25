@@ -22,7 +22,7 @@ class _SecondScreenState extends State<SecondScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: widget.color,
-        title: Text(widget.title),
+        title: Text(widget.title, style: const TextStyle(color: Colors.white),),
       ),
       body: Center(
         child: Column(
